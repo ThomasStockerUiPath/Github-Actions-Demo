@@ -37,8 +37,8 @@ jobs:
       - name: Run Tests
         run: |
           echo Running Tests
-           UiPath.CLI.1.0.7906.17381\uipcli.exe test run "https://staging.uipath.com/testsuite/DefaultTenant/orchestrator_" DefaultTenant -A testsuite -I f7d4a383-c8ad-47d8-a0cd-2f90447eb76f -S DKcH!0HpC4vA79U^ --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s "OrderProcessTestSet" -o "Thomas Stocker Modern Folder"
-         
+           UiPath.CLI.1.0.7906.17381\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I ed17379d-300e-4720-81f1-fd4a59609214 -S (4t@oPoFZd2MExly --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s OrderProcessTestSet -o "Thomas Stocker Modern Folder"
+          
           
        # Runs a set of commands using the runners shell
       - name: Deploy project
