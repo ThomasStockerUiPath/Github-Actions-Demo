@@ -44,4 +44,4 @@ jobs:
       - name: Deploy project
         run: |
           echo Deploying package
-          
+          UiPath.CLI.1.0.7906.17381\uipcli.exe package deploy Output "https://staging.uipath.com" DefaultTenant -A testsuite -I ed17379d-300e-4720-81f1-fd4a59609214 -S %fJlv%oe2ATU8_sS  --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs"  -o "Thomas Stocker Modern Folder"
