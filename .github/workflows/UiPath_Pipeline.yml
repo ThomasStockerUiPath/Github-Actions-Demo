@@ -37,11 +37,11 @@ jobs:
       - name: Run Tests
         run: |
           echo Running Tests
-          UiPath.CLI.1.0.7906.17381\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I ed17379d-300e-4720-81f1-fd4a59609214 -S %fJlv%oe2ATU8_sS --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s OrderProcessTestSet -o "Thomas Stocker Modern Folder"
+          UiPath.CLI.1.0.7906.17381\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I 15a80fad-100f-47d1-a8c7-d5fe289c3497 -S 77!%wirTsmY_o3vv --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s OrderProcessTestSet -o "Thomas Stocker Modern Folder"
           
           
        # Runs a set of commands using the runners shell
       - name: Deploy project
         run: |
           echo Deploying package
-          UiPath.CLI.1.0.7906.17381\uipcli.exe package deploy Output "https://staging.uipath.com" DefaultTenant -A testsuite -I ed17379d-300e-4720-81f1-fd4a59609214 -S %fJlv%oe2ATU8_sS  --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs"  -o "Thomas Stocker Modern Folder"
+          UiPath.CLI.1.0.7906.17381\uipcli.exe package deploy Output "https://staging.uipath.com" DefaultTenant -A testsuite -I 15a80fad-100f-47d1-a8c7-d5fe289c3497 -S 77!%wirTsmY_o3vv  --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs"  -o "Thomas Stocker Modern Folder"
