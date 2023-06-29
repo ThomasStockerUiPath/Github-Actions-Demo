@@ -1,19 +1,19 @@
 {
   "name": "Order Process",
   "description": "Blank Process",
-  "main": "Process\\Order Process.xaml",
+  "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.9.3]",
-    "UiPath.Mail.Activities": "[1.9.3]",
-    "UiPath.System.Activities": "[20.10.1]",
-    "UiPath.Testing.Activities": "[1.2.4]",
-    "UiPath.UIAutomation.Activities": "[20.10.5]"
+    "UiPath.Excel.Activities": "[2.15.0-alpha.2931564]",
+    "UiPath.Mail.Activities": "[1.18.0-alpha.2960579]",
+    "UiPath.System.Activities": "[22.10.0-alpha.2965824]",
+    "UiPath.Testing.Activities": "[22.8.2-preview]",
+    "UiPath.UIAutomation.Activities": "[22.8.0-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "20.10.0.0",
-  "projectVersion": "1.0.82468401",
+  "studioVersion": "22.10.0.0",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -27,7 +27,7 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": false
+    "mustRestoreAllDependencies": true
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -39,93 +39,18 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "1f154ab8-cc92-477e-b48c-123363dd4a8d",
-        "fileName": "Test Cases\\End2End\\No approval required.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "858a7433-f235-4a8d-8a8d-a3d0fb2fe535",
-        "fileName": "Test Cases\\End2End\\Order Approved.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "6a4b1a5b-a807-473d-97a0-fc5f55bc8ee1",
-        "fileName": "Test Cases\\End2End\\Order Rejected.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "88183d3f-e796-45ed-967d-294beb400405",
-        "fileName": "Test Cases\\Unit Tests\\Test ApproveOrder.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "bb3d2789-4d09-4040-b761-d1f6a7d0689f",
-        "dataVariationFilePath": ".variations\\products_products.json",
-        "fileName": "Test Cases\\Unit Tests\\Test ProcessOrder.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "856cb8e8-8eca-41cb-85ea-4684ba4fc931",
-        "fileName": "Test Cases\\Unit Tests\\Test CreateOrderInERP.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "4bb17b81-2cbc-48b7-9cdc-70ca1d522701",
-        "fileName": "Test Cases\\Unit Tests\\Test EnterSalesDataIntoCRM.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "9520cc31-2fb6-4ad0-a64c-73b9f850098b",
-        "fileName": "Test Cases\\Unit Tests\\Test FileOrder.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b84f8433-bfb2-446e-bcd6-8602649f99ca",
-        "fileName": "Test Cases\\Unit Tests\\Test RejectOrder.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "70724717-84c4-4c5d-8b8f-354319faa249",
-        "fileName": "Test Cases\\Unit Tests\\Test UpdateCustomerData.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "5ef33e52-39f1-4319-b23c-c433d3f077ce",
-        "fileName": "Process\\Workflows\\TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "372a9c2e-010a-4d8e-bc1f-3e2ab41ad0ce",
-        "dataVariationFilePath": ".variations\\products_products_1.json",
-        "fileName": "Process\\Workflows\\TestCase1.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "e1a8b1c3-94de-49bf-b32d-50ce591d05c3",
-        "fileName": "Process\\Order Process End2End Test Case.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "3094b2df-7ce5-42ef-a0d2-4a08a20e832c",
-        "fileName": "Process\\TestCase.xaml"
-      }
-    ],
-    "modernBehavior": false
+    "fileInfoCollection": [],
+    "modernBehavior": true
   },
-  "expressionLanguage": "VisualBasic",
+  "arguments": {
+    "input": [],
+    "output": []
+  },
+  "expressionLanguage": "CSharp",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "5352c862-6475-47fa-a9be-c08eaf04504e",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Process\\Order Process.xaml",
-      "uniqueId": "40d09fa2-b94f-46d2-a021-a8f783f7bbd5",
+      "uniqueId": "c3cb12e1-e8c7-4084-bbef-fbd3bb3e6322",
       "input": [],
       "output": []
     }
