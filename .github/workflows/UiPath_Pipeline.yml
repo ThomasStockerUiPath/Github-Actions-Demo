@@ -31,7 +31,7 @@ jobs:
       - name: Run Tests
         run: |
           echo Running Tests
-          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I "15a80fad-100f-47d1-a8c7-d5fe289c3497" -S "77!%wirTsmY_o3vv" --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s OrderProcessTestSet -o "Modern Folder"
+          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I "f77ad440-af8b-491c-a93a-d907e8a7fc69" -S "S(N?g@M?lfUV3@Ts" --applicationScope "OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings.Read OR.Robots.Read OR.Machines.Read OR.Execution OR.Assets OR.Users.Read OR.Jobs" -s OrderProcessTestSet -o "Modern Folder"
           
           
       
