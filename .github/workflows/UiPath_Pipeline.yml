@@ -31,8 +31,8 @@ jobs:
       - name: Run Tests
         run: |
           echo Running Tests
-          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I "f77ad440-af8b-491c-a93a-d907e8a7fc69" -S "S(N?g@M?lfUV3@Ts" --applicationScope "OR.Monitoring OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings OR.Robots OR.Machines OR.Execution OR.Assets OR.Users OR.Jobs" -s "360 demo" -o "Modern Folder" -r "result.json"
-          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test convert "result.json" "result.xml" -T junit
+          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test run "https://staging.uipath.com" DefaultTenant -A testsuite -I "f77ad440-af8b-491c-a93a-d907e8a7fc69" -S "S(N?g@M?lfUV3@Ts" --applicationScope "OR.Monitoring OR.Folders OR.BackgroundTasks OR.TestSets OR.TestSetExecutions OR.TestSetSchedules OR.Settings OR.Robots OR.Machines OR.Execution OR.Assets OR.Users OR.Jobs" -s "360 demo" -o "Modern Folder" -r "${{ github.workspace }}/result.json"
+          UiPath.CLI.23.2.0-windows-dev\tools\uipcli.exe test convert "${{ github.workspace }}/result.json" "${{ github.workspace }}/result.xml" -T junit
         
       - name: Publish JUnit results
         uses: actions/upload-artifact@v2
